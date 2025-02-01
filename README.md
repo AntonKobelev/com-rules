@@ -1,5 +1,5 @@
 
-<h1 align="center">Мобильное приложение <a href="https:/disk.yandex.ru/d/iKo7fshqc0GYcg" target="_blank">«Правила радиосвязи»</a> </h1>
+<h1 align="center">Мобильное приложение <a href="https://disk.yandex.ru/d/iKo7fshqc0GYcg" target="_blank">«Правила радиосвязи»</a> </h1>
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e2108e10-6329-4f27-8c46-14a38249fa58" alt="radio">
 </div>
