@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doc">
+
+    L<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitleDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_title"
+        style="@style/Style_for_titles"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewDoc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_1"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewDoc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_2"
+        android:layout_below="@id/textViewDoc1"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/textViewDoc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_3"
+        android:layout_below="@id/textViewDoc2"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/textViewDoc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_4"
+        android:layout_below="@id/textViewDoc3"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/textViewDoc5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_5"
+        android:layout_below="@id/textViewDoc4"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewDoc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doc_6"
+        android:layout_below="@id/textViewDoc4"
+        style="@style/Style_for_doc"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/back3"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Уральский институт ГПС МЧС России"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMethods"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="30dp"
+        android:text="@string/methods_title"
+        android:onClick="startMethods"
+        style="@style/Style_for_buttons_title" />
+
+    <Button
+        android:id="@+id/btnCharacter"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/btnMethods"
+        style="@style/Style_for_buttons_title"
+        android:onClick="startСhar"
+        android:text="@string/Char_title"
+        />
+    <Button
+        android:id="@+id/btnRules"
+        android:layout_below="@id/btnCharacter"
+        android:layout_marginTop="10dp"
+        android:text="@string/Rules_title"
+        android:onClick="startRules"
+        style="@style/Style_for_buttons_title"
+
+        />
+    <Button
+        android:id="@+id/btnSos"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnRules"
+        android:text="@string/Mayday_title_button"
+        android:onClick="startMayday"
+        style="@style/Style_for_buttons_title"
+        />
+    <Button
+        android:id="@+id/btnAudio"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnSos"
+        android:text="@string/Audio_title"
+        android:onClick="startAudio"
+        style="@style/Style_for_buttons_title"
+        />
+
+    <Button
+        android:id="@+id/btnDoc"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnAudio"
+        android:text="@string/doc_title"
+        android:onClick="startDoc"
+        style="@style/Style_for_buttons_title" />
+
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Версия 1.0"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+         />
+
+
+
+
+</RelativeLayout>

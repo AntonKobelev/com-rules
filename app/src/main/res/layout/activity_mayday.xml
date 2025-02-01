@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mayday">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewСonditionsMayday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cond_mayday_title"
+            style="@style/Style_for_titles"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textViewCondMaydayText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cond_mayday_text1"
+            android:layout_marginTop="20dp"
+            style="@style/Style_for_text"/>
+
+        <TextView
+            android:id="@+id/textViewCondMaydaySubheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cond_mayday_subheader"
+            android:layout_marginTop="20dp"
+            style="@style/Style_for_subheader_2"/>
+
+        <TextView
+            android:id="@+id/textViewCondMaydayText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cond_mayday_text2"
+            android:layout_marginTop="20dp"
+            style="@style/Style_for_text"/>
+
+        <TextView
+            android:id="@+id/textViewAlgorytmMayday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Algorytm_mayday_title"
+            style="@style/Style_for_titles"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textViewAlgorytmMaydayText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Algorytm_mayday_text1"
+            style="@style/Style_for_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/textViewAlgorytmMaydaySubheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Algorytm_mayday_subheader"
+            style="@style/Style_for_subheader_2" />
+
+        <TextView
+            android:id="@+id/textViewAlgorytmMaydayText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Algorytm_mayday_text2"
+            style="@style/Style_for_text"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textViewExamplesMayday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Examples_mayday_title"
+            style="@style/Style_for_titles"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textViewExamplesMaydayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Examples_mayday_text"
+            style="@style/Style_for_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

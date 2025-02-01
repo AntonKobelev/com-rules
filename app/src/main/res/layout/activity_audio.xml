@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Audio">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Audio_title"
+            android:layout_marginTop="20dp"
+            style="@style/Style_for_titles"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewArrivalCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewArrivalArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewArrivalCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewArrivalCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startArrival"/>
+
+            <TextView
+                android:id="@+id/textViewArrival"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Arrival_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewExplorationCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewExplorationArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewExplorationCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewExplorationCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startExploration"/>
+
+            <TextView
+                android:id="@+id/textViewExploration"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Exploration_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewLocalizationCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewLocalizationArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLocalizationCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLocalizationCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startLocalization"/>
+
+            <TextView
+                android:id="@+id/textViewLocalization"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Localization_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewEmergencyCallCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewEmergencyCallArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewEmergencyCallCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewEmergencyCallCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startEmergencyCall"/>
+
+            <TextView
+                android:id="@+id/textViewEmergencyCall"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Ambulance_request_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewReturnCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewReturnArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewReturnCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewReturnCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startReturn"/>
+
+            <TextView
+                android:id="@+id/textViewReturn"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Return_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewVictimsCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewVictimsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewVictimsCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewVictimsCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startVictims"/>
+
+            <TextView
+                android:id="@+id/textViewVictims"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Victims_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewAmbulanceMapCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewAmbulanceMapArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewAmbulanceMapCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewAmbulanceMapCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startAmbulanceMap"/>
+
+            <TextView
+                android:id="@+id/textViewAmbulanceMap"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Ambulance_map_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewFireRequestCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewFireRequestArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewFireRequestCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFireRequestCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startFireRequest"/>
+
+            <TextView
+                android:id="@+id/textViewFireRequest"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Fire_request_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewBroadcastCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewBroadcastArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBroadcastCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewBroadcastCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startBroadcast"/>
+
+            <TextView
+                android:id="@+id/textViewBroadcast"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/broadcast_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewOrderBCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewOrderBArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewOrderBCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewOrderBCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startOrderB"/>
+
+            <TextView
+                android:id="@+id/textViewOrderB"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Order_b_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewExecutingBCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewExecutingBArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewExecutingBCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewExecutingBCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startExecutingB"/>
+
+            <TextView
+                android:id="@+id/textViewExecutingB"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Executing_b_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewOrderVictimsCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewOrderVictimsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewOrderVictimsCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewOrderVictimsCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startOrderVictims"/>
+
+            <TextView
+                android:id="@+id/textViewOrderVictims"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Order_victims_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                 />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewExecutingVictimsCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewExecutingVictimsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewExecutingVictimsCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewExecutingVictimsCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startExecutingVictims"/>
+
+            <TextView
+                android:id="@+id/textViewExecutingVictims"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Executing_victims_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewRepeatCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewRepeatArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewRepeatCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewRepeatCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startRepeat"/>
+
+            <TextView
+                android:id="@+id/textViewRepeat"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Repeat_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewLadderCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewLadderArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLadderCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLadderCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startLadder"/>
+
+            <TextView
+                android:id="@+id/textViewLadder"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Ladder_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewMayday40AtmosphereCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewMayday40AtmosphereArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewMayday40AtmosphereCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewMayday40AtmosphereCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startMayday40Atmosphere"/>
+
+            <TextView
+                android:id="@+id/textViewMayday40Atmosphere"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Mayday_40_atmosphere_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewMaydayLinkCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewMaydayLinkArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewMaydayLinkCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewMaydayLinkCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startMaydayLink"/>
+
+            <TextView
+                android:id="@+id/textViewMaydayLink"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Mayday_link_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewMaydayTwoCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewMaydayTwoArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewMaydayTwoCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewMaydayTwoCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startMaydayTwo"/>
+
+            <TextView
+                android:id="@+id/textViewMaydayTwo"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Mayday_two_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewMaydayBurnoutCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_small" />
+
+            <ImageView
+                android:id="@+id/imageViewMaydayBurnoutArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewMaydayBurnoutCircle"
+                app:layout_constraintTop_toTopOf="@+id/imageViewMaydayBurnoutCircle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                android:onClick="startMaydayBurnout"/>
+
+            <TextView
+                android:id="@+id/textViewMaydayBurnout"
+                style="@style/Style_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:text="@string/Mayday_burnout_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewStudentsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Roles_text"
+            android:layout_marginTop="20dp"
+            style="@style/Style_for_text"
+            android:layout_marginBottom="30dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doc">
+
+    L<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitleMethods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/methods_title"
+        style="@style/Style_for_titles"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheaderMethodFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first_subheader"
+        style="@style/Style_for_subheader"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodFirst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first1"
+        style="@style/Style_for_text"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewSubheader2MethodFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first_subheader2_1_stage"
+        style="@style/Style_for_subheader_2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodFirst2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first2"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheader3MethodFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first_subheader2_2_stage"
+        style="@style/Style_for_subheader_2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodFirst3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first3"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodFirst4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_first4"
+        style="@style/Style_for_final_text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheaderMethodSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second_subheader"
+        style="@style/Style_for_subheader"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTextSecondSecond1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second1"
+        style="@style/Style_for_text"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheader2MethodSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second_subheader2_1_stage"
+        style="@style/Style_for_subheader_2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodSecond2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second2"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheader3MethodSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second_subheader2_2_stage"
+        style="@style/Style_for_subheader_2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodSecond3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second3"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSubheader4MethodSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second_subheader2_3_stage"
+        style="@style/Style_for_subheader_2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodSecond4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_second4"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewSubheaderMethodThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_three_subheader"
+        style="@style/Style_for_subheader"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTextMethodThree1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_method_three1"
+        style="@style/Style_for_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.comrules">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ComRules">
+        <activity android:name=".Mayday_burnout" android:screenOrientation="portrait" />
+        <activity android:name=".Mayday_two" android:screenOrientation="portrait"/>
+        <activity android:name=".Mayday_link" android:screenOrientation="portrait"/>
+        <activity android:name=".Mayday_40_atmosphere" android:screenOrientation="portrait"/>
+        <activity android:name=".Ladder" android:screenOrientation="portrait"/>
+        <activity android:name=".Repeat" android:screenOrientation="portrait"/>
+        <activity android:name=".Executing_victims" android:screenOrientation="portrait" />
+        <activity android:name=".Order_victims" android:screenOrientation="portrait" />
+        <activity android:name=".Executing_b" android:screenOrientation="portrait" />
+        <activity android:name=".Order_b" android:screenOrientation="portrait" />
+        <activity android:name=".broadcast" android:screenOrientation="portrait" />
+        <activity android:name=".Fire_request" android:screenOrientation="portrait" />
+        <activity android:name=".Ambulance_map" android:screenOrientation="portrait" />
+        <activity android:name=".Victims" android:screenOrientation="portrait" />
+        <activity android:name=".Return" android:screenOrientation="portrait" />
+        <activity android:name=".Emergency_call" android:screenOrientation="portrait" />
+        <activity android:name=".Localization" android:screenOrientation="portrait" />
+        <activity android:name=".Exploration" android:screenOrientation="portrait" />
+        <activity android:name=".Arrival" android:screenOrientation="portrait" />
+        <activity android:name=".Audio" android:screenOrientation="portrait" />
+        <activity android:name=".Mayday" android:screenOrientation="portrait" />
+        <activity android:name=".Rules" android:screenOrientation="portrait" />
+        <activity android:name=".Character" android:screenOrientation="portrait" />
+        <activity android:name=".Methods" android:screenOrientation="portrait" />
+        <activity android:name=".Doc" android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

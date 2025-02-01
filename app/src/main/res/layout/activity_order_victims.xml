@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Order_victims">
+
+
+    <TextView
+        android:id="@+id/textViewOrderVictims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Order_victims_title"
+        style="@style/Style_for_titles"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewOrderVictimsText"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Order_victims_text"
+        style="@style/Style_for_text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/playBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="play"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/circle_small" />
+
+        <ImageView
+            android:id="@+id/playIconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playIconImageView"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
